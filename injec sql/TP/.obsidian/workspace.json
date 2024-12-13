@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "3d98e6034c98870c",
+    "type": "split",
+    "children": [
+      {
+        "id": "d0f5f945d2aa22dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "281205bb42a99d7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practical Bug Bounty.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Practical Bug Bounty"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f8c11b49ed82cd37",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9fd0cf58e1001a4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "666e228cbc086fa2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorateur de fichiers"
+            }
+          },
+          {
+            "id": "0a80554f8616fb12",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Rechercher"
+            }
+          },
+          {
+            "id": "62118e9b28e3b713",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Signet"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a6b2652787e745c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "8097cc8ae9bea0cb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1400f29c0c90e2c0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Practical Bug Bounty.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rétrolien pour Practical Bug Bounty"
+            }
+          },
+          {
+            "id": "6fbcfa1e3c7e5b68",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Practical Bug Bounty.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Liens sortants de Practical Bug Bounty"
+            }
+          },
+          {
+            "id": "23d47431f2d94cb6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Mots-clés"
+            }
+          },
+          {
+            "id": "c5a6c38a221a7343",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Practical Bug Bounty.md"
+              },
+              "icon": "lucide-list",
+              "title": "Plan de Practical Bug Bounty"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false
+    }
+  },
+  "active": "281205bb42a99d7c",
+  "lastOpenFiles": [
+    "Auth_0x01.png",
+    "Practical Bug Bounty.md",
+    "Auth 0x01.png",
+    "Capture d'écran 2024-12-13 113925.png"
+  ]
+}
